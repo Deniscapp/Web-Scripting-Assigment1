@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <link type="text/css" rel="stylesheet" href="materialize/css/content.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+<!-- Page Content goes here -->
+<header>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a class="page-title">Denis's Page</a>
+            </div>
+        </div>
+    </nav>
+    <div class="side-nav fixed">
+        <ul id="side-nav" class="side-nav fixed">
+
+            <li class="navl"><a href="index.html"> <span class="material-icons">face</span> About </a></li>
+            <li class="navl"><a href="#!"> <span class="material-icons">work</span> Projects</a></li>
+            <li class="navl"><a href="#!"> <span class="material-icons">email</span> Contact Me!</a></li>
+        </ul>
+    </div>
+
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s0">
+                <!-- Teal page content  -->
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">phone</i>Phone</div>
+                        <div class="collapsible-body"><p>+1 646 833 9067</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">email</i>Email</div>
+                        <div class="collapsible-body"><p> denis_cappelini@hotmail.com</p></div>
+                    </li>
+                </ul>
+
+            <div class="card large white z-depth-2 col s12 m8 l6 offset-m2 offset-l3">
+                <div class="card-content">
+                    <form>
+                    <div class="row">
+                        <div class="input-field col s m6">
+                            <i class="material-icons prefix">person</i>
+                            <input id="first_name" name="first_name" type="text"/>
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">person</i>
+                            <input id="last_name" name="last_name" type="text"/>
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email"  name="email" type="email"/>
+                            <label data-error="wrong" data-success="right" for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="textarea" class="materialize-textarea"></textarea>
+                            <label for="textarea">Message</label>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--<div class="card-panel hoverable"> Hoverable Card Panel</div>-->
+
+
+</body>
+
+</html>

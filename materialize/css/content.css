@@ -10,6 +10,12 @@ header, main, footer {
 
 .material-icons{
     vertical-align:middle;
+    position: relative;
+    bottom: 0.2rem;
 
 
+}
+
+#staggered-test{
+    opacity: 0;
 }

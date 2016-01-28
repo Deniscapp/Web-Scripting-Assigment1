@@ -27,12 +27,12 @@
             </div>
         </div>
     </nav>
-                <div class="side-nav fixed">
-                    <ul id="side-nav" class="side-nav fixed">
+                <div class="side-nav fixed z-depth-2">
+                    <ul id="side-nav" class="side-nav fixed ">
 
-                        <li class="navl"><a href="#!"> <span class="material-icons">face</span> About </a></li>
+                        <li class="navl"><a href="index.html" onclick="Materialize.showStaggeredList('#staggered-test')"> <span class="material-icons">face</span> About </a></li>
                         <li class="navl"><a href="#!"> <span class="material-icons">work</span> Projects</a></li>
-                        <li class="navl"><a href="#!"> <span class="material-icons">email</span> Contact Me!</a></li>
+                        <li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>
                     </ul>
                 </div>
 
@@ -41,26 +41,28 @@
     <main>
         <div class="row">
             <div class="container">
-            <div class="col s8">
-                <!-- Teal page content  -->
-                <ul class="collapsible popout" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
+                <div class="col s8">
+
+                <!--<script type="text/javascript">-->
+                    <!--var options = [-->
+                    <!--{selector: '#staggered-test', offset: 50, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },-->
+                    <!--{selector: '#staggered-test', offset: 100, callback: 'Materialize.toast("Please continue scrolling!", 1500 )' },-->
+<!--//                    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },-->
+<!--//                    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }-->
+                    <!--];-->
+                    <!--Materialize.scrollFire(options);-->
+                <!--</script>-->
+                    <div id="staggered-test">
+                        <ul>
+                            <li><a href="#">Project 1</a></li>
+                            <li><a href="#">Project 2</a></li>
+                            <li><a href="#">Project 3</a></li>
+                            <li><a href="#">Project 4</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </main>
     <!--<div class="card-panel hoverable"> Hoverable Card Panel</div>-->
 
