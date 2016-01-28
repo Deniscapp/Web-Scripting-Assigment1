@@ -11,30 +11,24 @@
 
 
 
+
     </head>
+
+
 
     <body>
 
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("_navside.html");
+        });
+    </script>
 
         <!-- Page Content goes here -->
-    <header>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-wrapper">
-
-            </div>
-        </div>
-    </nav>
-                <div class="side-nav fixed z-depth-2">
-                    <ul id="side-nav" class="side-nav fixed ">
-
-                        <li class="navl"><a href="index.html" onclick="Materialize.showStaggeredList('#staggered-test')"> <span class="material-icons">face</span> About </a></li>
-                        <li class="navl"><a href="projects.html"> <span class="material-icons">work</span> Projects</a></li>
-                        <li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>
-                    </ul>
-                </div>
+    <header id="header">
 
     </header>
 
@@ -86,6 +80,31 @@
                         <p>
                             Programming, Teamwork, Leadership, Web Development, MVC Frameworks, Bootstrap, Grails, Groovy, Java, C, JavaScript, JQuery, MySQL, BPM, BPMN, Camunda, Git, Linux, UML, Android, Parse.
                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m7 l12 ">
+                <div class="card white z-depth-2 col s12 m7 l12 ">
+                    <div class="card-content">
+                        <div class="card-title col s12 m7 l12">
+                            <h3 class="center-align">Pictures</h3>
+                        </div>
+
+                        <div class="card-image col l6">
+                            <img class="materialboxed" width="50" data-caption="My girlfriend Jennifer and I " src="assets/images/IMG-20150614-WA0002.jpg">
+                        </div>
+                        <div class="card-image col l6">
+                            <img class="materialboxed" width="50" data-caption="Lincoln Memorial" src="assets/images/IMG_4646%20(1).JPG">
+
+                        </div>
+                    </div>
+                    <div class="card-content col s12 m7 l12">
+                        <div class="card-image col l6 offset-l3">
+                            <img class="materialboxed" width="50" data-caption="My nephew Pedro and I" src="assets/images/269296_461498637195497_1512206936_n.jpg">
+
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
