@@ -8,13 +8,21 @@ header, main, footer {
     }
 }
 
-.material-icons{
+#message{
+    margin-top: 15%;
+    box-sizing: border-box;
+}
+
+span{
     vertical-align:middle;
     position: relative;
     bottom: 0.2rem;
-
-
 }
+
+#git{
+float: right;
+}
+
 
 #staggered-test{
     opacity: 0;
