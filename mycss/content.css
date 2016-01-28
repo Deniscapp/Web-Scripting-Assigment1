@@ -8,10 +8,7 @@ header, main, footer {
     }
 }
 
-#message{
-    margin-top: 15%;
-    box-sizing: border-box;
-}
+
 
 span{
     vertical-align:middle;
@@ -19,9 +16,9 @@ span{
     bottom: 0.2rem;
 }
 
-#git{
-float: right;
-}
+/*#git{*/
+/*float: right;*/
+/*}*/
 
 
 #staggered-test{
