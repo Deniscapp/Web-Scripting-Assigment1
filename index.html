@@ -5,7 +5,7 @@
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 
-        <link type="text/css" rel="stylesheet" href="materialize/css/content.css"/>
+        <link type="text/css" rel="stylesheet" href="mycss/content.css"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -23,7 +23,7 @@
     <nav class="top-nav">
         <div class="container">
             <div class="nav-wrapper">
-                <a class="page-title">Denis's Page</a>
+
             </div>
         </div>
     </nav>
@@ -31,7 +31,7 @@
                     <ul id="side-nav" class="side-nav fixed ">
 
                         <li class="navl"><a href="index.html" onclick="Materialize.showStaggeredList('#staggered-test')"> <span class="material-icons">face</span> About </a></li>
-                        <li class="navl"><a href="#!"> <span class="material-icons">work</span> Projects</a></li>
+                        <li class="navl"><a href="projects.html"> <span class="material-icons">work</span> Projects</a></li>
                         <li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>
                     </ul>
                 </div>
@@ -40,25 +40,52 @@
 
     <main>
         <div class="row">
-            <div class="container">
-                <div class="col s8">
+            <div class="col s12 m7 l12 ">
+                <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
+                    <div class="card-content">
+                        <div class="card-title col s12 m7 l12">
+                            <h3 class="center-align">About</h3>
+                        </div>
 
-                <!--<script type="text/javascript">-->
-                    <!--var options = [-->
-                    <!--{selector: '#staggered-test', offset: 50, callback: 'Materialize.toast("This is our ScrollFire Demo!", 1500 )' },-->
-                    <!--{selector: '#staggered-test', offset: 100, callback: 'Materialize.toast("Please continue scrolling!", 1500 )' },-->
-<!--//                    {selector: '#staggered-test', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-test")' },-->
-<!--//                    {selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' }-->
-                    <!--];-->
-                    <!--Materialize.scrollFire(options);-->
-                <!--</script>-->
-                    <div id="staggered-test">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m7 l12 ">
+                <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3 ">
+                    <div class="card-content col l6 offset-l3 center-align">
+                        <div class="card-title">
+                            <h3 class="center-align">Education</h3>
+                        </div>
+
+
                         <ul>
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
-                            <li><a href="#">Project 4</a></li>
+                            <div class="card-image ">
+                                <img src="assets/images/logo-ufscar-fundo-transparente.png">
+                                <li> Universidade Federal de Sao Carlos (UFScar) - Sao Carlos/SP - Brazil</li>
+                                <hr>
+                            </div>
+
+                            <div class="card-image ">
+                                <img src="assets/images/Pace_University_logo.png"> <br>
+                                <li> Pace University - New York/NY - USA </li>
+                            </div>
                         </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m7 l12 ">
+                <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
+                    <div class="card-content">
+                        <div class="card-title col s12 m7 l12">
+                            <h3 class="center-align">Skills</h3>
+                        </div>
+
+                        <p>
+                            Programming, Teamwork, Leadership, Web Development, MVC Frameworks, Bootstrap, Grails, Groovy, Java, C, JavaScript, JQuery, MySQL, BPM, BPMN, Camunda, Git, Linux, UML, Android, Parse.
+                        </p>
                     </div>
                 </div>
             </div>
