@@ -9,8 +9,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-
-
 </head>
 
 <body>
@@ -18,23 +16,13 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
-<!-- Page Content goes here -->
-<header>
-    <nav class="top-nav">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a class="page-title">Denis's Page</a>
-            </div>
-        </div>
-    </nav>
-    <div class="side-nav fixed z-depth-2">
-        <ul id="side-nav" class="side-nav fixed ">
+<script>
+    $(function(){
+        $("#header").load("_navside.html");
+    });
+</script>
+<header id="header">
 
-            <li class="navl"><a href="index.html" onclick="Materialize.showStaggeredList('#staggered-test')"> <span class="material-icons">face</span> About </a></li>
-            <li class="navl"><a href="projects.html"> <span class="material-icons">work</span> Projects</a></li>
-            <li class="navl"><a href="contact.html"> <span class="material-icons">email</span> Contact Me!</a></li>
-        </ul>
-    </div>
 
 </header>
 
@@ -74,7 +62,7 @@
         <div class="col s12 m7 l12 ">
             <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
                 <div class="card-content">
-                    <div class="card-title col s12 m7 l12">
+                    <div class="card-title center-align">
                         <h3>Gain Filter</h3>
                     </div>
 
@@ -92,15 +80,16 @@
         <div class="col s12 m7 l12 ">
             <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
                 <div class="card-content">
-                    <div class="card-title col s12 m7 l12">
+                    <div class="card-title center-align">
                         <h3>Pet Finder</h3>
                     </div>
 
                     <p> Android application that will help pet owners to locate their lost pets around the city. The idea of the project consists in creating a community that helps to track lost pets around the world.
                         A person walking down the street might run into a lost dog and wants do something about it.
                         With Petfinder, the person will be able to take a picture of the dog, type a description,
-                        put its location and post it. In that way, the dog’s owner might track him back to his home. Using Android API and Parse.
-                    </p>
+                        put its location and post it. In that way, the dog's owner might track him back to his home.
+                    </p><br>
+                    <p>Using Android API and Parse.</p>
                     <div class="card-action center-align">
                         <div class="col s12 m6 l12">
                             <a href="https://github.com/Deniscapp/pet-finder" target="_blank">Github</a>
