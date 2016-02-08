@@ -12,9 +12,8 @@
     </head>
 
     <body>
-
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     <script>
         $(function(){
@@ -29,8 +28,7 @@
 
     <main>
         <div class="row">
-            <div class="col s12 m7 l12 ">
-                <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3"><br><br>
+                <div id="card-about" class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3"><br><br>
                     <div class="col l6 offset-l3">
                         <img src="assets/images/12182697_1113696068642414_8619857915126883182_o.jpg"  class="circle responsive-img">
                     </div>
@@ -49,19 +47,43 @@
                              I know a little bit about many things that I want to improve, and I hope that I can on this course.
 
                         </p><br>
+                    </div>
 
-                        <div class="card-action center-align">
+                        <div class="card-action col l12 center-align">
                             <a id="git" href="https://github.com/Deniscapp" target="_blank">Github Profile</a>
-
 
                         </div>
 
-                    </div>
-                </div>
-            </div>
 
-            <div class="col s12 m7 l12 ">
-                <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3 ">
+
+
+                </div>
+
+        </div>
+
+        <div class="row center-align">
+            <button id="card1-button" class="waves-effect waves-light btn">Hide card</button>
+
+        </div>
+            <script>
+                $('#card1-button').click(function () {
+                    console.log($('#card1-button').text());
+                    $('#card-about').fadeToggle('slow', 'linear');
+                    if($('#card1-button').text()=="Hide card") {
+                        console.log("entrou");
+                        $('#card1-button').html("Show card");
+                    }else{
+                        $('#card1-button').html("Hide card");
+
+                    }
+
+                });
+
+            </script>
+
+
+        <div class="row">
+                <div id="card-2" class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3 ">
                     <div class="card-content col l6 offset-l3 center-align">
                         <div class="card-title">
                             <h3 class="center-align">Education</h3>
@@ -83,24 +105,114 @@
 
                     </div>
                 </div>
-            </div>
+        </div>
 
-            <div class="col s12 m7 l12 ">
-                <div class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
+
+        <div class="row center-align">
+            <button id="card2-button" class="waves-effect waves-light btn">Slide in card</button>
+
+        </div>
+
+        <script>
+            $('#card-2').hide();
+            console.log($('#card2-button').text());
+
+            $('#card2-button').click(function () {
+                console.log($('#card2-button').text());
+
+                    console.log("entrou");
+                    $('#card-2').slideToggle("slow",function(){
+                        console.log("after slided");
+                    });
+                if($('#card2-button').text()=="Slide in card"){
+                    $('#card2-button').html("Slide out card");
+                }else{
+                    $('#card2-button').html("Slide in card");
+
+                }
+
+            });
+
+
+
+        </script>
+        <div class="row">
+                <div id="card-3" class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
                     <div class="card-content">
                         <div class="card-title col s12 m7 l12">
                             <h3 class="center-align">Skills</h3>
                         </div>
 
-                        <p>
+                        <p id="skills">
                             Programming, Teamwork, Leadership, Web Development, MVC Frameworks, Bootstrap, Grails, Groovy, Java, C, JavaScript, JQuery, MySQL, BPM, BPMN, Camunda, Git, Linux, UML, Android, Parse.
                         </p>
                     </div>
                 </div>
-            </div>
+        </div>
 
-            <div class="col s12 m7 l12 ">
-                <div class="card white z-depth-2 col s12 m7 l12 ">
+        <div class="row center-align">
+            <button id="card3-button" class="waves-effect waves-light btn">Random animation</button>
+
+        </div>
+        <script>
+            var previous = 0;
+            var originalSize = $('#skills').css('fontSize');
+
+            $('#card3-button').click(function(){
+                var actual = Math.floor((Math.random() * 3) + 1);
+
+                while(previous==actual)
+                    actual = Math.floor((Math.random() * 3) + 1);
+
+                previous = actual;
+                switch (actual){
+
+                    case 1: one();
+                            break;
+
+                    case 2: two();
+                            break;
+
+                    case 3: three();
+                            break;
+
+                }
+
+            });
+
+            function one(){
+                console.log("one");
+                $('#card-3').animate({
+                    width: "60%",
+                    height: "70%",
+                    fontSize: "2.3em",
+                    opacity: 0.9
+                },1500);
+            }
+
+            function two() {
+                console.log("two");
+                $('#card-3').animate({
+                    width: "20%",
+                    height: "50%",
+                    fontSize: originalSize,
+                    opacity: 5.4
+                }, 1500);
+            }
+
+            function three(){
+                console.log("three");
+                $('#card-3').animate({
+                    fontSize: "1.1em",
+                    height: "70%",
+                    opacity: 0.2
+                },1500);
+            }
+
+        </script>
+
+        <div class="row">
+                <div class="card white z-depth-2 col s12 m7 l10 offset-l1 ">
                     <div class="card-content">
                         <div class="card-title col s12 m7 l12">
                             <h3 class="center-align">Pictures</h3>
@@ -120,10 +232,10 @@
 
                         </div>
                     </div>
-                    </div>
                 </div>
-            </div>
         </div>
+
+
     </main>
     <!--<div class="card-panel hoverable"> Hoverable Card Panel</div>-->
 
