@@ -9,17 +9,20 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("_navside.html");
+            });
+        </script>
+
+        <script type="text/javascript" src="js/functions.js"></script>
+
     </head>
 
     <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    <script>
-        $(function(){
-            $("#header").load("_navside.html");
-        });
-    </script>
 
         <!-- Page Content goes here -->
     <header id="header">
@@ -55,8 +58,6 @@
                         </div>
 
 
-
-
                 </div>
 
         </div>
@@ -65,21 +66,21 @@
             <button id="card1-button" class="waves-effect waves-light btn">Hide card</button>
 
         </div>
-            <script>
-                $('#card1-button').click(function () {
-                    console.log($('#card1-button').text());
-                    $('#card-about').fadeToggle('slow', 'linear');
-                    if($('#card1-button').text()=="Hide card") {
-                        console.log("entrou");
-                        $('#card1-button').html("Show card");
-                    }else{
-                        $('#card1-button').html("Hide card");
+            <!--<script>-->
+                <!--$('#card1-button').click(function () {-->
+                    <!--console.log($('#card1-button').text());-->
+                    <!--$('#card-about').fadeToggle('slow', 'linear');-->
+                    <!--if($('#card1-button').text()=="Hide card") {-->
+                        <!--console.log("entrou");-->
+                        <!--$('#card1-button').html("Show card");-->
+                    <!--}else{-->
+                        <!--$('#card1-button').html("Hide card");-->
 
-                    }
+                    <!--}-->
 
-                });
+                <!--});-->
 
-            </script>
+            <!--</script>-->
 
 
         <div class="row">
@@ -113,29 +114,27 @@
 
         </div>
 
-        <script>
-            $('#card-2').hide();
-            console.log($('#card2-button').text());
+        <!--<script>-->
+            <!--$('#card-2').hide();-->
+            <!--console.log($('#card2-button').text());-->
 
-            $('#card2-button').click(function () {
-                console.log($('#card2-button').text());
+            <!--$('#card2-button').click(function () {-->
+                <!--console.log($('#card2-button').text());-->
 
-                    console.log("entrou");
-                    $('#card-2').slideToggle("slow",function(){
-                        console.log("after slided");
-                    });
-                if($('#card2-button').text()=="Slide in card"){
-                    $('#card2-button').html("Slide out card");
-                }else{
-                    $('#card2-button').html("Slide in card");
+                    <!--console.log("entrou");-->
+                    <!--$('#card-2').slideToggle("slow",function(){-->
+                        <!--console.log("after slided");-->
+                    <!--});-->
+                <!--if($('#card2-button').text()=="Slide in card"){-->
+                    <!--$('#card2-button').html("Slide out card");-->
+                <!--}else{-->
+                    <!--$('#card2-button').html("Slide in card");-->
 
-                }
+                <!--}-->
 
-            });
-
-
-
-        </script>
+            <!--});-->
+            <!---->
+        <!--</script>-->
         <div class="row">
                 <div id="card-3" class="card white z-depth-2 col s12 m7 l6 offset-m2 offset-l3">
                     <div class="card-content">
@@ -154,62 +153,62 @@
             <button id="card3-button" class="waves-effect waves-light btn">Random animation</button>
 
         </div>
-        <script>
-            var previous = 0;
-            var originalSize = $('#skills').css('fontSize');
+        <!--<script>-->
+            <!--var previous = 0;-->
+            <!--var originalSize = $('#skills').css('fontSize');-->
 
-            $('#card3-button').click(function(){
-                var actual = Math.floor((Math.random() * 3) + 1);
+            <!--$('#card3-button').click(function(){-->
+                <!--var actual = Math.floor((Math.random() * 3) + 1);-->
 
-                while(previous==actual)
-                    actual = Math.floor((Math.random() * 3) + 1);
+                <!--while(previous==actual)-->
+                    <!--actual = Math.floor((Math.random() * 3) + 1);-->
 
-                previous = actual;
-                switch (actual){
+                <!--previous = actual;-->
+                <!--switch (actual){-->
 
-                    case 1: one();
-                            break;
+                    <!--case 1: one();-->
+                            <!--break;-->
 
-                    case 2: two();
-                            break;
+                    <!--case 2: two();-->
+                            <!--break;-->
 
-                    case 3: three();
-                            break;
+                    <!--case 3: three();-->
+                            <!--break;-->
 
-                }
+                <!--}-->
 
-            });
+            <!--});-->
 
-            function one(){
-                console.log("one");
-                $('#card-3').animate({
-                    width: "60%",
-                    height: "70%",
-                    fontSize: "2.3em",
-                    opacity: 0.9
-                },1500);
-            }
+            <!--function one(){-->
+                <!--console.log("one");-->
+                <!--$('#card-3').animate({-->
+                    <!--width: "60%",-->
+                    <!--height: "70%",-->
+                    <!--fontSize: "2.3em",-->
+                    <!--opacity: 0.9-->
+                <!--},1500);-->
+            <!--}-->
 
-            function two() {
-                console.log("two");
-                $('#card-3').animate({
-                    width: "20%",
-                    height: "50%",
-                    fontSize: originalSize,
-                    opacity: 5.4
-                }, 1500);
-            }
+            <!--function two() {-->
+                <!--console.log("two");-->
+                <!--$('#card-3').animate({-->
+                    <!--width: "20%",-->
+                    <!--height: "50%",-->
+                    <!--fontSize: originalSize,-->
+                    <!--opacity: 5.4-->
+                <!--}, 1500);-->
+            <!--}-->
 
-            function three(){
-                console.log("three");
-                $('#card-3').animate({
-                    fontSize: "1.1em",
-                    height: "70%",
-                    opacity: 0.2
-                },1500);
-            }
+            <!--function three(){-->
+                <!--console.log("three");-->
+                <!--$('#card-3').animate({-->
+                    <!--fontSize: "1.1em",-->
+                    <!--height: "70%",-->
+                    <!--opacity: 0.2-->
+                <!--},1500);-->
+            <!--}-->
 
-        </script>
+        <!--</script>-->
 
         <div class="row">
                 <div class="card white z-depth-2 col s12 m7 l10 offset-l1 ">
